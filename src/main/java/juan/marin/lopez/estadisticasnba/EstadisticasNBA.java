@@ -40,6 +40,9 @@ public class EstadisticasNBA extends javax.swing.JPanel {
 
         LabelNombreJugador = new javax.swing.JLabel();
         TextNombreJugador = new javax.swing.JTextField();
+        ButtonGuardar = new javax.swing.JButton();
+        TabbedPaneDatos = new javax.swing.JTabbedPane();
+        PanelTiros = new javax.swing.JPanel();
         Label2Lanzados = new javax.swing.JLabel();
         Label2Encestados = new javax.swing.JLabel();
         SpinnerTotales2 = new javax.swing.JSpinner();
@@ -48,19 +51,35 @@ public class EstadisticasNBA extends javax.swing.JPanel {
         SpinnerTotales3 = new javax.swing.JSpinner();
         Label3Encestados = new javax.swing.JLabel();
         Spinner3Encestados = new javax.swing.JSpinner();
-        ButtonGuardar = new javax.swing.JButton();
-        jLabel1 = new javax.swing.JLabel();
-        jLabel2 = new javax.swing.JLabel();
+        LabelLibresTotales = new javax.swing.JLabel();
+        LabelLibresEncestados = new javax.swing.JLabel();
         SpinnerTotalesLibres = new javax.swing.JSpinner();
         SpinnerLibresEncestados = new javax.swing.JSpinner();
+        LabelAsistenciasTotales = new javax.swing.JLabel();
+        SpinnerAsistenciasTotales = new javax.swing.JSpinner();
+        PanelMasDatos = new javax.swing.JPanel();
+        LabelPerdidasTotales = new javax.swing.JLabel();
+        LabelFaltasRecibidas = new javax.swing.JLabel();
+        SpinnerPerdidasTotales = new javax.swing.JSpinner();
+        SpinnerFaltasRecibidas = new javax.swing.JSpinner();
+        LabelFaltasRealizadas = new javax.swing.JLabel();
+        SpinnerFaltasRealizadas = new javax.swing.JSpinner();
+        LabelTaponesRecibidos = new javax.swing.JLabel();
+        SpinnerTaponesRecibidos = new javax.swing.JSpinner();
+        LabelRebotesTotales = new javax.swing.JLabel();
+        LabelRobosTotales = new javax.swing.JLabel();
+        SpinnerRebotesTotales = new javax.swing.JSpinner();
+        SpinnerRobosTotales = new javax.swing.JSpinner();
+        LabelTaponesRealizados = new javax.swing.JLabel();
+        SpinnerTaponesRealizados = new javax.swing.JSpinner();
 
         setLayout(new java.awt.GridBagLayout());
 
         LabelNombreJugador.setText("Nombre Jugador");
         gridBagConstraints = new java.awt.GridBagConstraints();
         gridBagConstraints.gridx = 2;
-        gridBagConstraints.gridy = 2;
-        gridBagConstraints.insets = new java.awt.Insets(30, 30, 30, 30);
+        gridBagConstraints.gridy = 0;
+        gridBagConstraints.insets = new java.awt.Insets(30, 4, 30, 30);
         add(LabelNombreJugador, gridBagConstraints);
 
         TextNombreJugador.addActionListener(new java.awt.event.ActionListener() {
@@ -69,68 +88,12 @@ public class EstadisticasNBA extends javax.swing.JPanel {
             }
         });
         gridBagConstraints = new java.awt.GridBagConstraints();
-        gridBagConstraints.gridx = 4;
-        gridBagConstraints.gridy = 2;
-        gridBagConstraints.gridwidth = 3;
+        gridBagConstraints.gridx = 3;
+        gridBagConstraints.gridy = 0;
+        gridBagConstraints.gridwidth = 2;
         gridBagConstraints.fill = java.awt.GridBagConstraints.HORIZONTAL;
-        gridBagConstraints.insets = new java.awt.Insets(30, 30, 30, 30);
+        gridBagConstraints.insets = new java.awt.Insets(30, 30, 30, 0);
         add(TextNombreJugador, gridBagConstraints);
-
-        Label2Lanzados.setText("Tiros de 2 lanzados");
-        gridBagConstraints = new java.awt.GridBagConstraints();
-        gridBagConstraints.gridx = 2;
-        gridBagConstraints.gridy = 9;
-        gridBagConstraints.insets = new java.awt.Insets(30, 30, 30, 30);
-        add(Label2Lanzados, gridBagConstraints);
-
-        Label2Encestados.setText("Tiros de 2 encestados");
-        gridBagConstraints = new java.awt.GridBagConstraints();
-        gridBagConstraints.gridx = 2;
-        gridBagConstraints.gridy = 11;
-        gridBagConstraints.insets = new java.awt.Insets(30, 30, 30, 30);
-        add(Label2Encestados, gridBagConstraints);
-        gridBagConstraints = new java.awt.GridBagConstraints();
-        gridBagConstraints.gridx = 5;
-        gridBagConstraints.gridy = 9;
-        gridBagConstraints.gridwidth = 2;
-        gridBagConstraints.fill = java.awt.GridBagConstraints.HORIZONTAL;
-        gridBagConstraints.insets = new java.awt.Insets(30, 30, 30, 30);
-        add(SpinnerTotales2, gridBagConstraints);
-        gridBagConstraints = new java.awt.GridBagConstraints();
-        gridBagConstraints.gridx = 5;
-        gridBagConstraints.gridy = 11;
-        gridBagConstraints.gridwidth = 2;
-        gridBagConstraints.fill = java.awt.GridBagConstraints.HORIZONTAL;
-        gridBagConstraints.insets = new java.awt.Insets(30, 30, 30, 30);
-        add(Spinner2Encestados, gridBagConstraints);
-
-        Label3Totales.setText("Tiros de 3 lanzados");
-        gridBagConstraints = new java.awt.GridBagConstraints();
-        gridBagConstraints.gridx = 2;
-        gridBagConstraints.gridy = 13;
-        gridBagConstraints.insets = new java.awt.Insets(30, 30, 30, 30);
-        add(Label3Totales, gridBagConstraints);
-        gridBagConstraints = new java.awt.GridBagConstraints();
-        gridBagConstraints.gridx = 5;
-        gridBagConstraints.gridy = 13;
-        gridBagConstraints.gridwidth = 2;
-        gridBagConstraints.fill = java.awt.GridBagConstraints.HORIZONTAL;
-        gridBagConstraints.insets = new java.awt.Insets(30, 30, 30, 30);
-        add(SpinnerTotales3, gridBagConstraints);
-
-        Label3Encestados.setText("Tiros de 3 encestados");
-        gridBagConstraints = new java.awt.GridBagConstraints();
-        gridBagConstraints.gridx = 2;
-        gridBagConstraints.gridy = 15;
-        gridBagConstraints.insets = new java.awt.Insets(30, 30, 30, 30);
-        add(Label3Encestados, gridBagConstraints);
-        gridBagConstraints = new java.awt.GridBagConstraints();
-        gridBagConstraints.gridx = 5;
-        gridBagConstraints.gridy = 15;
-        gridBagConstraints.gridwidth = 2;
-        gridBagConstraints.fill = java.awt.GridBagConstraints.HORIZONTAL;
-        gridBagConstraints.insets = new java.awt.Insets(30, 30, 30, 30);
-        add(Spinner3Encestados, gridBagConstraints);
 
         ButtonGuardar.setText("Guardar");
         ButtonGuardar.addActionListener(new java.awt.event.ActionListener() {
@@ -139,39 +102,237 @@ public class EstadisticasNBA extends javax.swing.JPanel {
             }
         });
         gridBagConstraints = new java.awt.GridBagConstraints();
-        gridBagConstraints.gridx = 4;
-        gridBagConstraints.gridy = 17;
-        gridBagConstraints.insets = new java.awt.Insets(15, 15, 15, 0);
+        gridBagConstraints.gridx = 2;
+        gridBagConstraints.gridy = 3;
+        gridBagConstraints.gridwidth = 3;
+        gridBagConstraints.insets = new java.awt.Insets(15, 15, 15, 15);
         add(ButtonGuardar, gridBagConstraints);
 
-        jLabel1.setText("Tiros Libres lanzados");
+        PanelTiros.setLayout(new java.awt.GridBagLayout());
+
+        Label2Lanzados.setText("Tiros de 2 lanzados");
         gridBagConstraints = new java.awt.GridBagConstraints();
         gridBagConstraints.gridx = 2;
         gridBagConstraints.gridy = 5;
+        gridBagConstraints.fill = java.awt.GridBagConstraints.HORIZONTAL;
         gridBagConstraints.insets = new java.awt.Insets(30, 30, 30, 30);
-        add(jLabel1, gridBagConstraints);
+        PanelTiros.add(Label2Lanzados, gridBagConstraints);
 
-        jLabel2.setText("Tiros libres encestados");
+        Label2Encestados.setText("Tiros de 2 encestados");
         gridBagConstraints = new java.awt.GridBagConstraints();
         gridBagConstraints.gridx = 2;
         gridBagConstraints.gridy = 7;
+        gridBagConstraints.fill = java.awt.GridBagConstraints.HORIZONTAL;
         gridBagConstraints.insets = new java.awt.Insets(30, 30, 30, 30);
-        add(jLabel2, gridBagConstraints);
+        PanelTiros.add(Label2Encestados, gridBagConstraints);
         gridBagConstraints = new java.awt.GridBagConstraints();
         gridBagConstraints.gridx = 5;
         gridBagConstraints.gridy = 5;
+        gridBagConstraints.gridwidth = 2;
+        gridBagConstraints.fill = java.awt.GridBagConstraints.HORIZONTAL;
+        gridBagConstraints.insets = new java.awt.Insets(30, 30, 30, 30);
+        PanelTiros.add(SpinnerTotales2, gridBagConstraints);
+        gridBagConstraints = new java.awt.GridBagConstraints();
+        gridBagConstraints.gridx = 5;
+        gridBagConstraints.gridy = 7;
+        gridBagConstraints.gridwidth = 2;
+        gridBagConstraints.fill = java.awt.GridBagConstraints.HORIZONTAL;
+        gridBagConstraints.insets = new java.awt.Insets(30, 30, 30, 30);
+        PanelTiros.add(Spinner2Encestados, gridBagConstraints);
+
+        Label3Totales.setText("Tiros de 3 lanzados");
+        gridBagConstraints = new java.awt.GridBagConstraints();
+        gridBagConstraints.gridx = 2;
+        gridBagConstraints.gridy = 9;
+        gridBagConstraints.fill = java.awt.GridBagConstraints.HORIZONTAL;
+        gridBagConstraints.insets = new java.awt.Insets(30, 30, 30, 30);
+        PanelTiros.add(Label3Totales, gridBagConstraints);
+        gridBagConstraints = new java.awt.GridBagConstraints();
+        gridBagConstraints.gridx = 5;
+        gridBagConstraints.gridy = 9;
+        gridBagConstraints.gridwidth = 2;
+        gridBagConstraints.fill = java.awt.GridBagConstraints.HORIZONTAL;
+        gridBagConstraints.insets = new java.awt.Insets(30, 30, 30, 30);
+        PanelTiros.add(SpinnerTotales3, gridBagConstraints);
+
+        Label3Encestados.setText("Tiros de 3 encestados");
+        gridBagConstraints = new java.awt.GridBagConstraints();
+        gridBagConstraints.gridx = 2;
+        gridBagConstraints.gridy = 11;
+        gridBagConstraints.fill = java.awt.GridBagConstraints.HORIZONTAL;
+        gridBagConstraints.insets = new java.awt.Insets(30, 30, 30, 30);
+        PanelTiros.add(Label3Encestados, gridBagConstraints);
+        gridBagConstraints = new java.awt.GridBagConstraints();
+        gridBagConstraints.gridx = 5;
+        gridBagConstraints.gridy = 11;
+        gridBagConstraints.gridwidth = 2;
+        gridBagConstraints.fill = java.awt.GridBagConstraints.HORIZONTAL;
+        gridBagConstraints.insets = new java.awt.Insets(30, 30, 30, 30);
+        PanelTiros.add(Spinner3Encestados, gridBagConstraints);
+
+        LabelLibresTotales.setText("Tiros Libres lanzados");
+        gridBagConstraints = new java.awt.GridBagConstraints();
+        gridBagConstraints.gridx = 2;
+        gridBagConstraints.gridy = 1;
+        gridBagConstraints.fill = java.awt.GridBagConstraints.HORIZONTAL;
+        gridBagConstraints.insets = new java.awt.Insets(30, 30, 30, 30);
+        PanelTiros.add(LabelLibresTotales, gridBagConstraints);
+
+        LabelLibresEncestados.setText("Tiros libres encestados");
+        gridBagConstraints = new java.awt.GridBagConstraints();
+        gridBagConstraints.gridx = 2;
+        gridBagConstraints.gridy = 3;
+        gridBagConstraints.fill = java.awt.GridBagConstraints.HORIZONTAL;
+        gridBagConstraints.insets = new java.awt.Insets(30, 30, 30, 30);
+        PanelTiros.add(LabelLibresEncestados, gridBagConstraints);
+        gridBagConstraints = new java.awt.GridBagConstraints();
+        gridBagConstraints.gridx = 5;
+        gridBagConstraints.gridy = 1;
         gridBagConstraints.gridwidth = 2;
         gridBagConstraints.fill = java.awt.GridBagConstraints.HORIZONTAL;
         gridBagConstraints.ipadx = 17;
         gridBagConstraints.insets = new java.awt.Insets(30, 30, 30, 30);
-        add(SpinnerTotalesLibres, gridBagConstraints);
+        PanelTiros.add(SpinnerTotalesLibres, gridBagConstraints);
+        gridBagConstraints = new java.awt.GridBagConstraints();
+        gridBagConstraints.gridx = 5;
+        gridBagConstraints.gridy = 3;
+        gridBagConstraints.gridwidth = 2;
+        gridBagConstraints.fill = java.awt.GridBagConstraints.HORIZONTAL;
+        gridBagConstraints.insets = new java.awt.Insets(30, 30, 30, 30);
+        PanelTiros.add(SpinnerLibresEncestados, gridBagConstraints);
+
+        LabelAsistenciasTotales.setText("Asistencias totales");
+        gridBagConstraints = new java.awt.GridBagConstraints();
+        gridBagConstraints.gridx = 2;
+        gridBagConstraints.gridy = 13;
+        gridBagConstraints.fill = java.awt.GridBagConstraints.HORIZONTAL;
+        gridBagConstraints.insets = new java.awt.Insets(30, 30, 30, 30);
+        PanelTiros.add(LabelAsistenciasTotales, gridBagConstraints);
+        gridBagConstraints = new java.awt.GridBagConstraints();
+        gridBagConstraints.gridx = 5;
+        gridBagConstraints.gridy = 13;
+        gridBagConstraints.gridwidth = 2;
+        gridBagConstraints.fill = java.awt.GridBagConstraints.HORIZONTAL;
+        gridBagConstraints.insets = new java.awt.Insets(30, 30, 30, 30);
+        PanelTiros.add(SpinnerAsistenciasTotales, gridBagConstraints);
+
+        TabbedPaneDatos.addTab("Tiros", PanelTiros);
+
+        PanelMasDatos.setLayout(new java.awt.GridBagLayout());
+
+        LabelPerdidasTotales.setText("Perdidas totales");
+        gridBagConstraints = new java.awt.GridBagConstraints();
+        gridBagConstraints.gridx = 2;
+        gridBagConstraints.gridy = 5;
+        gridBagConstraints.fill = java.awt.GridBagConstraints.HORIZONTAL;
+        gridBagConstraints.insets = new java.awt.Insets(30, 30, 30, 30);
+        PanelMasDatos.add(LabelPerdidasTotales, gridBagConstraints);
+
+        LabelFaltasRecibidas.setText("Faltas recibidas");
+        gridBagConstraints = new java.awt.GridBagConstraints();
+        gridBagConstraints.gridx = 2;
+        gridBagConstraints.gridy = 7;
+        gridBagConstraints.fill = java.awt.GridBagConstraints.HORIZONTAL;
+        gridBagConstraints.insets = new java.awt.Insets(30, 30, 30, 30);
+        PanelMasDatos.add(LabelFaltasRecibidas, gridBagConstraints);
+        gridBagConstraints = new java.awt.GridBagConstraints();
+        gridBagConstraints.gridx = 5;
+        gridBagConstraints.gridy = 5;
+        gridBagConstraints.gridwidth = 2;
+        gridBagConstraints.fill = java.awt.GridBagConstraints.HORIZONTAL;
+        gridBagConstraints.insets = new java.awt.Insets(30, 30, 30, 30);
+        PanelMasDatos.add(SpinnerPerdidasTotales, gridBagConstraints);
         gridBagConstraints = new java.awt.GridBagConstraints();
         gridBagConstraints.gridx = 5;
         gridBagConstraints.gridy = 7;
         gridBagConstraints.gridwidth = 2;
         gridBagConstraints.fill = java.awt.GridBagConstraints.HORIZONTAL;
         gridBagConstraints.insets = new java.awt.Insets(30, 30, 30, 30);
-        add(SpinnerLibresEncestados, gridBagConstraints);
+        PanelMasDatos.add(SpinnerFaltasRecibidas, gridBagConstraints);
+
+        LabelFaltasRealizadas.setText("Faltas realizadas");
+        gridBagConstraints = new java.awt.GridBagConstraints();
+        gridBagConstraints.gridx = 2;
+        gridBagConstraints.gridy = 9;
+        gridBagConstraints.fill = java.awt.GridBagConstraints.HORIZONTAL;
+        gridBagConstraints.insets = new java.awt.Insets(30, 30, 30, 30);
+        PanelMasDatos.add(LabelFaltasRealizadas, gridBagConstraints);
+        gridBagConstraints = new java.awt.GridBagConstraints();
+        gridBagConstraints.gridx = 5;
+        gridBagConstraints.gridy = 9;
+        gridBagConstraints.gridwidth = 2;
+        gridBagConstraints.fill = java.awt.GridBagConstraints.HORIZONTAL;
+        gridBagConstraints.insets = new java.awt.Insets(30, 30, 30, 30);
+        PanelMasDatos.add(SpinnerFaltasRealizadas, gridBagConstraints);
+
+        LabelTaponesRecibidos.setText("Tapones recibidos");
+        gridBagConstraints = new java.awt.GridBagConstraints();
+        gridBagConstraints.gridx = 2;
+        gridBagConstraints.gridy = 11;
+        gridBagConstraints.fill = java.awt.GridBagConstraints.HORIZONTAL;
+        gridBagConstraints.insets = new java.awt.Insets(30, 30, 30, 30);
+        PanelMasDatos.add(LabelTaponesRecibidos, gridBagConstraints);
+        gridBagConstraints = new java.awt.GridBagConstraints();
+        gridBagConstraints.gridx = 5;
+        gridBagConstraints.gridy = 11;
+        gridBagConstraints.gridwidth = 2;
+        gridBagConstraints.fill = java.awt.GridBagConstraints.HORIZONTAL;
+        gridBagConstraints.insets = new java.awt.Insets(30, 30, 30, 30);
+        PanelMasDatos.add(SpinnerTaponesRecibidos, gridBagConstraints);
+
+        LabelRebotesTotales.setText("Rebotes totales");
+        gridBagConstraints = new java.awt.GridBagConstraints();
+        gridBagConstraints.gridx = 2;
+        gridBagConstraints.gridy = 1;
+        gridBagConstraints.fill = java.awt.GridBagConstraints.HORIZONTAL;
+        gridBagConstraints.insets = new java.awt.Insets(30, 30, 30, 30);
+        PanelMasDatos.add(LabelRebotesTotales, gridBagConstraints);
+
+        LabelRobosTotales.setText("Robos totales");
+        gridBagConstraints = new java.awt.GridBagConstraints();
+        gridBagConstraints.gridx = 2;
+        gridBagConstraints.gridy = 3;
+        gridBagConstraints.fill = java.awt.GridBagConstraints.HORIZONTAL;
+        gridBagConstraints.insets = new java.awt.Insets(30, 30, 30, 30);
+        PanelMasDatos.add(LabelRobosTotales, gridBagConstraints);
+        gridBagConstraints = new java.awt.GridBagConstraints();
+        gridBagConstraints.gridx = 5;
+        gridBagConstraints.gridy = 1;
+        gridBagConstraints.gridwidth = 2;
+        gridBagConstraints.fill = java.awt.GridBagConstraints.HORIZONTAL;
+        gridBagConstraints.ipadx = 17;
+        gridBagConstraints.insets = new java.awt.Insets(30, 30, 30, 30);
+        PanelMasDatos.add(SpinnerRebotesTotales, gridBagConstraints);
+        gridBagConstraints = new java.awt.GridBagConstraints();
+        gridBagConstraints.gridx = 5;
+        gridBagConstraints.gridy = 3;
+        gridBagConstraints.gridwidth = 2;
+        gridBagConstraints.fill = java.awt.GridBagConstraints.HORIZONTAL;
+        gridBagConstraints.insets = new java.awt.Insets(30, 30, 30, 30);
+        PanelMasDatos.add(SpinnerRobosTotales, gridBagConstraints);
+
+        LabelTaponesRealizados.setText("Tapones realizados");
+        gridBagConstraints = new java.awt.GridBagConstraints();
+        gridBagConstraints.gridx = 2;
+        gridBagConstraints.gridy = 13;
+        gridBagConstraints.fill = java.awt.GridBagConstraints.HORIZONTAL;
+        gridBagConstraints.insets = new java.awt.Insets(30, 30, 30, 30);
+        PanelMasDatos.add(LabelTaponesRealizados, gridBagConstraints);
+        gridBagConstraints = new java.awt.GridBagConstraints();
+        gridBagConstraints.gridx = 5;
+        gridBagConstraints.gridy = 13;
+        gridBagConstraints.gridwidth = 2;
+        gridBagConstraints.fill = java.awt.GridBagConstraints.HORIZONTAL;
+        gridBagConstraints.insets = new java.awt.Insets(30, 30, 30, 30);
+        PanelMasDatos.add(SpinnerTaponesRealizados, gridBagConstraints);
+
+        TabbedPaneDatos.addTab("Más Datos", PanelMasDatos);
+
+        gridBagConstraints = new java.awt.GridBagConstraints();
+        gridBagConstraints.gridx = 2;
+        gridBagConstraints.gridy = 1;
+        gridBagConstraints.gridwidth = 3;
+        add(TabbedPaneDatos, gridBagConstraints);
     }// </editor-fold>//GEN-END:initComponents
 
     private void TextNombreJugadorActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_TextNombreJugadorActionPerformed
@@ -188,6 +349,14 @@ public class EstadisticasNBA extends javax.swing.JPanel {
         int tiros2Encestados = (Integer) Spinner2Encestados.getValue();
         int tiros3Realizados = (Integer) SpinnerTotales3.getValue();
         int tiros3Encestados = (Integer) Spinner3Encestados.getValue();
+        int asistencias = (Integer) SpinnerAsistenciasTotales.getValue();
+        int rebotes = (Integer) SpinnerRebotesTotales.getValue();
+        int robos = (Integer) SpinnerRobosTotales.getValue();
+        int perdidas = (Integer) SpinnerPerdidasTotales.getValue();
+        int faltasRealizadas = (Integer) SpinnerFaltasRealizadas.getValue();
+        int faltasRecibidas = (Integer) SpinnerFaltasRecibidas.getValue();
+        int taponesRealizados = (Integer) SpinnerTaponesRealizados.getValue();
+        int taponesRecibidos = (Integer) SpinnerTaponesRecibidos.getValue();
         
         // Calcular los puntos
         int puntos = (2 * tiros2Encestados) + (3 * tiros3Encestados) + (tirosLibresEncestados);
@@ -207,6 +376,9 @@ public class EstadisticasNBA extends javax.swing.JPanel {
         
         int tirosTotalesRealizados = tiros2Realizados + tiros3Realizados + tirosLibresRealizados;
         int tirosTotalesEncestados = tiros2Encestados + tiros3Encestados + tirosLibresEncestados;
+        
+        // Calcular valoración
+        int valoracion = (puntos + rebotes + asistencias + robos + taponesRealizados + faltasRecibidas) - ((fga - (tiros2Encestados + tiros3Encestados)) - (fta - tirosLibresEncestados) - perdidas + faltasRealizadas + taponesRecibidos);
         
         
         try {
@@ -240,17 +412,20 @@ public class EstadisticasNBA extends javax.swing.JPanel {
                 cabecera.createCell(9).setCellValue("% FG");
                 cabecera.createCell(10).setCellValue("% eFG");
                 cabecera.createCell(11).setCellValue("% TS");
+                cabecera.createCell(12).setCellValue("Asistencias");
+                cabecera.createCell(13).setCellValue("Rebotes");
+                cabecera.createCell(14).setCellValue("Robos");
+                cabecera.createCell(15).setCellValue("Perdidas");
+                cabecera.createCell(16).setCellValue("Faltas recibidas");
+                cabecera.createCell(17).setCellValue("Faltas realizadas");
+                cabecera.createCell(18).setCellValue("Tapones recibidos");
+                cabecera.createCell(19).setCellValue("Tapones realizados");
+                cabecera.createCell(20).setCellValue("Valoración");
             }
                
-            // Eliminar la fila de promedios si existe
+
             int rowCount = sheet.getPhysicalNumberOfRows();
-            if (rowCount > 1) {
-                Row lastRow = sheet.getRow(rowCount - 1);
-                if (lastRow != null && lastRow.getCell(0).getStringCellValue().equals("Promedio")) {
-                    sheet.removeRow(lastRow);
-                }
-            }
-            
+
             // Crear una nueva fila para el nuevo jugador en la primera fila libre
             Row row = sheet.createRow(rowCount);
             row.createCell(0).setCellValue(nombreJugador);
@@ -265,8 +440,18 @@ public class EstadisticasNBA extends javax.swing.JPanel {
             row.createCell(9).setCellValue(fg);  // Agregar % FG al archivo
             row.createCell(10).setCellValue(efg);  // Agregar % eFG al archivo
             row.createCell(11).setCellValue(ts);  // Agregar % TS al archivo
+            row.createCell(12).setCellValue(asistencias);
+            row.createCell(13).setCellValue(rebotes);
+            row.createCell(14).setCellValue(robos);
+            row.createCell(15).setCellValue(perdidas);
+            row.createCell(16).setCellValue(faltasRecibidas);
+            row.createCell(17).setCellValue(faltasRealizadas);
+            row.createCell(18).setCellValue(taponesRecibidos);
+            row.createCell(19).setCellValue(taponesRealizados);
+            row.createCell(20).setCellValue(valoracion);  // Agregar valoracion al archivo
             
-            
+            FileOutputStream fos = new FileOutputStream(archivo);
+            wb.write(fos);
             
             // Calcular promedios
             double totalTirosTotalesRealizados = 0;
@@ -279,16 +464,22 @@ public class EstadisticasNBA extends javax.swing.JPanel {
             double totalPuntos = 0;
             double totalFga = 0;
             double totalFta = 0;
+            double totalAsistencias = 0;
+            double totalRebotes = 0;
+            double totalRobos = 0;
+            double totalPerdidas = 0;
+            double totalFaltasRecibidas = 0;
+            double totalFaltasRealizadas = 0;
+            double totalTaponesRecibidos = 0;
+            double totalTaponesRealizados = 0;
+            double totalValoracion = 0;
             
             int numJugadores = sheet.getPhysicalNumberOfRows() - 1; // Excluir la fila de cabecera
-            
-            FileOutputStream fos = new FileOutputStream(archivo);
-            wb.write(fos);
             
             for (int i = 1; i <= numJugadores; i++) {
                 Row r = sheet.getRow(i);
                 if (r == null) { // Verifica si la fila está vacía
-                    sheet.removeRow(row); // Elimina la fila
+                    sheet.removeRow(r); // Elimina la fila
                     i--;
                     return;
                 }
@@ -302,6 +493,15 @@ public class EstadisticasNBA extends javax.swing.JPanel {
                 totalPuntos += r.getCell(8).getNumericCellValue();
                 totalFga += r.getCell(4).getNumericCellValue() + r.getCell(6).getNumericCellValue();
                 totalFta += r.getCell(2).getNumericCellValue();
+                totalAsistencias += r.getCell(12).getNumericCellValue();
+                totalRebotes += r.getCell(13).getNumericCellValue();
+                totalRobos += r.getCell(14).getNumericCellValue();
+                totalPerdidas += r.getCell(15).getNumericCellValue();
+                totalFaltasRecibidas += r.getCell(16).getNumericCellValue();
+                totalFaltasRealizadas += r.getCell(17).getNumericCellValue();
+                totalTaponesRecibidos += r.getCell(18).getNumericCellValue();
+                totalTaponesRealizados += r.getCell(19).getNumericCellValue();
+                totalValoracion += r.getCell(20).getNumericCellValue();
             }
             
             double promedioTirosTotalesRealizados = totalTirosTotalesRealizados / numJugadores;
@@ -315,6 +515,15 @@ public class EstadisticasNBA extends javax.swing.JPanel {
             double promedioFg = (totalFga > 0) ? (totalTiros2Encestados + totalTiros3Encestados) / totalFga * 100 : 0;
             double promedioEfg = (totalFga > 0) ? (totalTiros2Encestados + 0.5 * totalTiros3Encestados) / totalFga * 100 : 0;
             double promedioTs = (totalFta > 0) ? totalPuntos/(2*(totalFga+0.44*totalFta)) : 0;
+            double promedioAsistencias = totalAsistencias / numJugadores;
+            double promedioRebotes = totalRebotes / numJugadores;
+            double promedioRobos = totalRobos / numJugadores;
+            double promedioPerdidas = totalPerdidas / numJugadores;
+            double promedioFaltasRecibidas = totalFaltasRecibidas / numJugadores;
+            double promedioFaltasRealizadas = totalFaltasRealizadas / numJugadores;
+            double promedioTaponesRecibidos = totalTaponesRecibidos / numJugadores;
+            double promedioTaponesRealizados = totalTaponesRealizados / numJugadores;
+            double promedioValoracion = totalValoracion / numJugadores;
 
             // Agregar la fila de promedios
             Row promedioRow = sheet.createRow(rowCount+1);
@@ -330,6 +539,15 @@ public class EstadisticasNBA extends javax.swing.JPanel {
             promedioRow.createCell(9).setCellValue(promedioFg);  // Agregar % FG al archivo
             promedioRow.createCell(10).setCellValue(promedioEfg);  // Agregar % eFG al archivo
             promedioRow.createCell(11).setCellValue(promedioTs);  // Agregar % TS al archivo
+            promedioRow.createCell(12).setCellValue(promedioAsistencias);
+            promedioRow.createCell(13).setCellValue(promedioRebotes);
+            promedioRow.createCell(14).setCellValue(promedioRobos);
+            promedioRow.createCell(15).setCellValue(promedioPerdidas);
+            promedioRow.createCell(16).setCellValue(promedioFaltasRecibidas);
+            promedioRow.createCell(17).setCellValue(promedioFaltasRealizadas);
+            promedioRow.createCell(18).setCellValue(promedioTaponesRecibidos);
+            promedioRow.createCell(19).setCellValue(promedioTaponesRealizados);
+            promedioRow.createCell(20).setCellValue(promedioValoracion);  // Agregar valoracion al archivo
             
             fos = new FileOutputStream(archivo);
             wb.write(fos);
@@ -343,7 +561,7 @@ public class EstadisticasNBA extends javax.swing.JPanel {
         JFrame interfaz = new JFrame("Interfaz");
         EstadisticasNBA panel = new EstadisticasNBA();
         interfaz.setContentPane(panel);
-        interfaz.setSize(485, 673);
+        interfaz.setSize(404, 744);
         interfaz.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
         interfaz.setLocationRelativeTo(null);
         interfaz.setVisible(true);
@@ -356,15 +574,34 @@ public class EstadisticasNBA extends javax.swing.JPanel {
     private javax.swing.JLabel Label2Lanzados;
     private javax.swing.JLabel Label3Encestados;
     private javax.swing.JLabel Label3Totales;
+    private javax.swing.JLabel LabelAsistenciasTotales;
+    private javax.swing.JLabel LabelFaltasRealizadas;
+    private javax.swing.JLabel LabelFaltasRecibidas;
+    private javax.swing.JLabel LabelLibresEncestados;
+    private javax.swing.JLabel LabelLibresTotales;
     private javax.swing.JLabel LabelNombreJugador;
+    private javax.swing.JLabel LabelPerdidasTotales;
+    private javax.swing.JLabel LabelRebotesTotales;
+    private javax.swing.JLabel LabelRobosTotales;
+    private javax.swing.JLabel LabelTaponesRealizados;
+    private javax.swing.JLabel LabelTaponesRecibidos;
+    private javax.swing.JPanel PanelMasDatos;
+    private javax.swing.JPanel PanelTiros;
     private javax.swing.JSpinner Spinner2Encestados;
     private javax.swing.JSpinner Spinner3Encestados;
+    private javax.swing.JSpinner SpinnerAsistenciasTotales;
+    private javax.swing.JSpinner SpinnerFaltasRealizadas;
+    private javax.swing.JSpinner SpinnerFaltasRecibidas;
     private javax.swing.JSpinner SpinnerLibresEncestados;
+    private javax.swing.JSpinner SpinnerPerdidasTotales;
+    private javax.swing.JSpinner SpinnerRebotesTotales;
+    private javax.swing.JSpinner SpinnerRobosTotales;
+    private javax.swing.JSpinner SpinnerTaponesRealizados;
+    private javax.swing.JSpinner SpinnerTaponesRecibidos;
     private javax.swing.JSpinner SpinnerTotales2;
     private javax.swing.JSpinner SpinnerTotales3;
     private javax.swing.JSpinner SpinnerTotalesLibres;
+    private javax.swing.JTabbedPane TabbedPaneDatos;
     private javax.swing.JTextField TextNombreJugador;
-    private javax.swing.JLabel jLabel1;
-    private javax.swing.JLabel jLabel2;
     // End of variables declaration//GEN-END:variables
 }
